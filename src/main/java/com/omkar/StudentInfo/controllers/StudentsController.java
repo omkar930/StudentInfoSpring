@@ -1,5 +1,6 @@
-import java.util.List;
+package com.omkar.StudentInfo.controllers;
 
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,7 +24,7 @@ public class StudentsController{
     }
 
     @PostMapping("/create/{name}/{age}/{adhar}/{university}")
-    public String createStudent(String name, int age, int adhar, String university){
+    public String createStudent(String name, String age, String adhar, String university){
         String id = studentService.createStudent(name, age, name, university);
         return id;
     }
