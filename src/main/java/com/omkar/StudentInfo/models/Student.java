@@ -1,4 +1,4 @@
-package com.omkar.models;
+package com.omkar.StudentInfo.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
