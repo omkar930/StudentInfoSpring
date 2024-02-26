@@ -1,4 +1,4 @@
-package com.omkar.repository;
+package com.omkar.StudentInfo.repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
