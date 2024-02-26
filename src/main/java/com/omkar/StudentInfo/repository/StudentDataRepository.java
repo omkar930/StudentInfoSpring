@@ -18,7 +18,7 @@ public class StudentDataRepository {
     }
 
     public Student getStudentById(final String id){
-        return students.getOrDefault(id,null);
+        return students.get(id);
     }
 
     public List<Student> getStudentsByUniversity(String university){

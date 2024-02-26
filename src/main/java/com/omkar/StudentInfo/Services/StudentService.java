@@ -17,7 +17,7 @@ public class StudentService {
 
     public String createStudent(
         String name,
-        int age,
+        String age,
         String adhar,
         String university 
 

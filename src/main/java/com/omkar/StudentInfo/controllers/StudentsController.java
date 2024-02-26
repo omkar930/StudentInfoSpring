@@ -18,19 +18,19 @@ public class StudentsController{
     @Autowired
     private StudentService studentService;
 
-    @GetMapping("/get/{id}")
+    @GetMapping("/geti/{id}")
     public Student getStudentById(@PathVariable String id){
         return studentService.getStudentById(id);
     }
 
     @PostMapping("/create/{name}/{age}/{adhar}/{university}")
-    public String createStudent(String name, String age, String adhar, String university){
+    public String createStudent(@PathVariable String name, @PathVariable String age,@PathVariable String adhar,@PathVariable String university){
         String id = studentService.createStudent(name, age, name, university);
         return id;
     }
 
-    @GetMapping("/get/{university}")
-    public List<Student> getStudentsByUniversity(String university){
+    @GetMapping("/getu/{university}")
+    public List<Student> getStudentsByUniversity(@PathVariable String university){
         return studentService.getStudentsByUniversity(university);
     }
 
